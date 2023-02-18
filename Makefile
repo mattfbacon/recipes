@@ -6,4 +6,4 @@ dist/%.html: %.md style.css
 	md2html $< >> $@
 
 .PHONY: all
-all: $(patsubst %.md,dist/%.html,$(wildcard *.md))
+all: $(patsubst %.md,dist/%.html,$(filter-out template.md,$(wildcard *.md)))
