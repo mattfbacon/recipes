@@ -13,7 +13,7 @@ Makes about 2 cups
 - 1 1/2 c. water
 - Pinch ground nutmeg
 - 1" fresh ginger, grated
-- 2 tbsp. loose leaf black tea
+- 1/2 - 1 tsp. loose leaf black tea
 - 1 1/2 c. whole milk
 
 ## Instructions
