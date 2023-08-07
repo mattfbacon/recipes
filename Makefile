@@ -1,9 +1,17 @@
-dist/%.html: %.md style.css
+OUT_DIR ?= dist
+MD2HTML ?= md2html
+
+.PHONY: all
+all: $(ALL_OUTPUTS) $(OUT_DIR)/index.html
+
+$(OUT_DIR)/%.html: %.md style.css
 	mkdir -p $(shell dirname $@)
 	echo '<style>' > $@
 	cat style.css >> $@
 	echo '</style>' >> $@
-	md2html $< >> $@
+	$(MD2HTML) $< >> $@
 
-.PHONY: all
-all: $(patsubst %.md,dist/%.html,$(filter-out template.md,$(wildcard *.md)))
+ALL_OUTPUTS := $(patsubst %.md,$(OUT_DIR)/%.html,$(filter-out _%,$(wildcard *.md)))
+
+$(OUT_DIR)/index.html: $(ALL_OUTPUTS)
+	python gen-index.py > $@
