@@ -13,7 +13,7 @@ Makes one loaf
 * 400–500 grams mashed overripe bananas (about 4 or 5 medium bananas)
 * 99 grams vegetable oil
 * brown sugar: 71 grams for "bread", 142 grams for "loaf cake"
-* 2 large eggs
+* 1 egg
 * 1–1 1/2 tsp assorted extracts (see notes)
 * 1 cup flour
 * 1 cup whole wheat flour
